@@ -76,6 +76,15 @@ input[type="radio"].visually-hidden {
   border-color: #2a2c2b; /* for IE  */
 }
 
+.link:hover,
+.link:focus {
+  color: var(--color-red);
+  color: #e50004; /* for IE  */
+  border-color: var(--color-red);
+  border-color: #e50004; /* for IE  */
+  transition: all 0.2s ;
+}
+
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -90,6 +99,10 @@ input[type="radio"].visually-hidden {
   background-color: var(--color-extra-dark-grey);
   background-color: #2a2c2b; /* for IE  */
   border: none;
+}
+
+.button:hover {
+  outline: 2px solid #e50004;
 }
 
 .button--big {
