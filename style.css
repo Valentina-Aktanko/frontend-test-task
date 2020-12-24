@@ -1,0 +1,17 @@
+:root {
+  --color-white: #ffffff;
+  --color-light-grey: #f3f5f7;
+  --color-yellow: #f9b700;
+  --color-green: #60af20;
+  --color-grey: #7a7c7b;
+  --color-blue: #0094d3;
+  --color-dark-grey-1: #575756;
+  --color-dark-grey-2: #525453;
+  --color-red: #e50004;
+  --color-extra-dark-grey: #2a2c2b;
+}
+
+body {
+  
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+}
