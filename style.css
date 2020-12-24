@@ -43,6 +43,7 @@ input[type="radio"].visually-hidden {
 .content-wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   width: 375px;
   box-sizing: border-box;
 }
@@ -277,17 +278,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .content-wrapper {
-  }
-}
-
-@media (min-width: 1920px) {
-  .content-wrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    padding: 96px 254px;
-    padding-left: 257px;
-    width: 1920px;
+    width: 786px;
   }
 
   .title--section {
@@ -296,9 +287,8 @@ input[type="radio"].visually-hidden {
 
   .about {
     margin: 0;
-    margin-right: 149px;
-    padding: 0;
-    width: 570px;
+    padding: 48px 96px;
+    width: 786px;
   }
 
   .about__title {
@@ -312,16 +302,17 @@ input[type="radio"].visually-hidden {
 
   .jobs {
     margin: 0;
-    padding: 0;
-    width: 690px;
+    padding: 48px 96px;
+    width: 786px;
   }
-  
+
   .jobs__item {
     position: relative;
     flex-direction: row;
     padding: 24px;
     padding-left: 120px;
   }
+
   .jobs__main-info {
     width: 330px;
     margin-right: 29px;
@@ -332,6 +323,7 @@ input[type="radio"].visually-hidden {
     padding-left: 0;
     margin-top: 2px;
     min-height: auto;
+    width: 187px;
   }
 
   .jobs__details::before {
@@ -342,6 +334,24 @@ input[type="radio"].visually-hidden {
     height: 80px;
   }
 
+  .jobs__item--catering .jobs__details::before {
+    background-size: 38px 44px;
+  }
+  
+  .jobs__item--cleaning .jobs__details::before {
+    background-position: 8px 12px;
+    background-size: 64px 50px;
+  }
+  
+  .jobs__item--vending .jobs__details::before {
+    background-position: 12px 20px;
+    background-size: 56px 48px;
+  }
+  
+  .jobs__item--kitchen .jobs__details::before {
+    background-size: 57px 44px;
+  }
+
   .jobs__employment {
     margin-bottom: 0;
   }
@@ -349,5 +359,38 @@ input[type="radio"].visually-hidden {
   .about__link {
     margin-bottom: 45px;
   }
+}
+
+@media (min-width: 1920px) {
+  .content-wrapper {
+    flex-direction: row;
+    padding: 96px 254px;
+    padding-left: 257px;
+    width: 1920px;
+  }
+
+  .about {
+    margin: 0;
+    margin-right: 149px;
+    padding: 0;
+    width: 570px;
+  }
+
+  .jobs {
+    margin: 0;
+    padding: 0;
+    width: 690px;
+  }
+  
+  .jobs__main-info {
+    width: 330px;
+    margin-right: 29px;
+  }
+
+  
+
+ 
+
+  
   
 }
