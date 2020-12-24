@@ -146,6 +146,7 @@ input[type="radio"].visually-hidden {
 
 .icon--pin::before {
   background-image: url(../img/icon-pin.svg);
+  
 }
 
 .icon--wallet::before {
@@ -248,16 +249,66 @@ input[type="radio"].visually-hidden {
   min-height: 60px;
 }
 
-.jobs__details::before {
+.job__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 0;
   left: 0;
-  content: '';
+  margin: 0;
   margin-right: 20px;
   width: 60px;
   height: 60px;
-  background-color: var(--color-grey);
-  background-color: #7a7c7b; /* for IE  */
+}
+
+.job__image--catering {
+  background-color: var(--color-red);
+  background-color: #e50004; /* for IE  */
+}
+
+.job__image--catering svg {
+  width: 31px;
+  height: 36px;
+}
+
+.job__image--cleaning {
+  background-color: var(--color-blue);
+  background-color: #0094d3; /* for IE  */
+}
+
+.job__image--cleaning svg {
+  width: 52px;
+  height: 42px;
+}
+
+.job__image--vending {
+  background-color: var(--color-green);
+  background-color: #60af20; /* for IE  */
+}
+
+.job__image--vending svg {
+  width: 48px;
+  height: 40px;
+}
+
+.job__image--kitchen {
+  background-color: var(--color-yellow);
+  background-color: #f9b700; /* for IE  */
+}
+
+.job__image--kitchen svg {
+  width: 47px;
+  height: 36px;
+}
+
+.jobs__details::before {
 }
 
 .jobs__text {
@@ -269,39 +320,15 @@ input[type="radio"].visually-hidden {
 }
 
 .jobs__item--catering .jobs__details::before {
-  background-color: var(--color-red);
-  background-color: #e50004; /* for IE  */
-  background-image: url(../img/GastroRestaurant.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 31px 36px;
 }
 
 .jobs__item--cleaning .jobs__details::before {
-  background-color: var(--color-blue);
-  background-color: #0094d3; /* for IE  */
-  background-image: url(../img/Gebaeudereinigung.svg);
-  background-position: 2px 6px;
-  background-repeat: no-repeat;
-  background-size: 52px 42px;
 }
 
 .jobs__item--vending .jobs__details::before {
-  background-color: var(--color-green);
-  background-color: #60af20; /* for IE  */
-  background-image: url(../img/GewerblicheBerufe.svg);
-  background-position: 7px 13px;
-  background-repeat: no-repeat;
-  background-size: 48px 40px;
 }
 
 .jobs__item--kitchen .jobs__details::before {
-  background-color: var(--color-yellow);
-  background-color: #f9b700; /* for IE  */
-  background-image: url(../img/GastroKueche.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 47px 36px;
 }
 
 .jobs__button {
@@ -361,7 +388,7 @@ input[type="radio"].visually-hidden {
     width: 187px;
   }
 
-  .jobs__details::before {
+  .job__image {
     top: 10px;
     left: 10px;
     margin-right: 30px;
@@ -369,24 +396,26 @@ input[type="radio"].visually-hidden {
     height: 80px;
   }
 
-  .jobs__item--catering .jobs__details::before {
-    background-size: 38px 44px;
+  .job__image--catering svg {
+    width: 38px;
+    height: 44px;
   }
   
-  .jobs__item--cleaning .jobs__details::before {
-    background-position: 8px 12px;
-    background-size: 64px 50px;
+  .job__image--cleaning svg {
+    width: 64px;
+    height: 50px;
   }
   
-  .jobs__item--vending .jobs__details::before {
-    background-position: 12px 20px;
-    background-size: 56px 48px;
+  .job__image--vending svg {
+    width: 56px;
+    height: 48px;
   }
   
-  .jobs__item--kitchen .jobs__details::before {
-    background-size: 57px 44px;
+  .job__image--kitchen svg {
+    width: 57px;
+    height: 44px;
   }
-
+  
   .jobs__employment {
     margin-bottom: 0;
   }
