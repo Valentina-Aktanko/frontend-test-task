@@ -1,0 +1,391 @@
+:root {
+  --color-white: #ffffff;
+  --color-light-grey: #f3f5f7;
+  --color-yellow: #f9b700;
+  --color-green: #60af20;
+  --color-grey: #7a7c7b;
+  --color-blue: #0094d3;
+  --color-dark-grey-1: #575756;
+  --color-dark-grey-2: #525453;
+  --color-red: #e50004;
+  --color-extra-dark-grey: #2a2c2b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 375px;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  color: var(--color-extra-dark-grey);
+  color: #2a2c2b; /* for IE  */
+  background-color: var(--color-light-grey);
+  background-color: #f3f5f7;  /* for IE  */
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 375px;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.title--section {
+  letter-spacing: 1px;
+}
+
+.text {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.text--primary {
+  color: var(--color-dark-grey-2);
+  color: #525453; /* for IE  */
+}
+
+.text--secondary {
+  color: var(--color-grey);
+  color: #7a7c7b; /* for IE  */
+}
+
+.link {
+  padding-bottom: 4px;
+  color: var(--color-extra-dark-grey);
+  color: #2a2c2b; /* for IE  */
+  text-decoration: none;
+  border-bottom: 1px solid;
+  border-color: var(--color-extra-dark-grey);
+  border-color: #2a2c2b; /* for IE  */
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-red);
+  color: #e50004; /* for IE  */
+  border-color: var(--color-red);
+  border-color: #e50004; /* for IE  */
+  transition: all 0.2s ;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--color-white);
+  color: #ffffff; /* for IE  */
+  background-color: var(--color-extra-dark-grey);
+  background-color: #2a2c2b; /* for IE  */
+  border: none;
+}
+
+.button:hover {
+  outline: 2px solid #e50004;
+}
+
+.button--big {
+  padding: 22px;
+  font-size: 20px;
+}
+
+.icon {
+  position: relative;
+  padding-left: 26px;
+}
+
+.icon::before {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 16px 16px;
+}
+
+.icon--pin::before {
+  background-image: url(../img/icon-pin.svg);
+  
+}
+
+.icon--wallet::before {
+  background-image: url(../img/icon-wallet.svg);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 40px;
+  padding-top: 56px;
+  width: 375px;
+  box-sizing: border-box;
+}
+
+.about__title {
+  margin-bottom: 30px;
+}
+
+.about__text {
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.about__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.about__link {
+  order: -1;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.jobs {
+  width: 375px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-left: 23px;
+  box-sizing: border-box;
+}
+
+.jobs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jobs__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-top: 23px;
+  background-color: var(--color-white);
+  background-color: #ffffff;  /* for IE  */
+}
+
+.jobs__title {
+  margin-bottom: 7px;
+}
+
+.jobs__employment {
+  margin-bottom: 20px;
+}
+
+.jobs__details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  min-height: 60px;
+}
+
+.jobs__details::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-grey);
+  background-color: #7a7c7b; /* for IE  */
+}
+
+.jobs__text {
+  margin-bottom: 10px;
+}
+
+.jobs__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.jobs__item--catering .jobs__details::before {
+  background-color: var(--color-red);
+  background-color: #e50004; /* for IE  */
+  background-image: url(../img/GastroRestaurant.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 31px 36px;
+}
+
+.jobs__item--cleaning .jobs__details::before {
+  background-color: var(--color-blue);
+  background-color: #0094d3; /* for IE  */
+  background-image: url(../img/Gebaeudereinigung.svg);
+  background-position: 2px 6px;
+  background-repeat: no-repeat;
+  background-size: 52px 42px;
+}
+
+.jobs__item--vending .jobs__details::before {
+  background-color: var(--color-green);
+  background-color: #60af20; /* for IE  */
+  background-image: url(../img/GewerblicheBerufe.svg);
+  background-position: 7px 13px;
+  background-repeat: no-repeat;
+  background-size: 48px 40px;
+}
+
+.jobs__item--kitchen .jobs__details::before {
+  background-color: var(--color-yellow);
+  background-color: #f9b700; /* for IE  */
+  background-image: url(../img/GastroKueche.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 47px 36px;
+}
+
+.jobs__button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    width: 786px;
+  }
+
+  .title--section {
+    font-size: 36px;
+  }
+
+  .about {
+    margin: 0;
+    padding: 48px 96px;
+    width: 786px;
+  }
+
+  .about__title {
+    margin-bottom: 40px;
+  }
+
+  .about__text {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .jobs {
+    margin: 0;
+    padding: 48px 96px;
+    width: 786px;
+  }
+
+  .jobs__item {
+    position: relative;
+    flex-direction: row;
+    padding: 24px;
+    padding-left: 120px;
+  }
+
+  .jobs__main-info {
+    width: 330px;
+    margin-right: 29px;
+  }
+
+  .jobs__details {
+    position: static;
+    padding-left: 0;
+    margin-top: 2px;
+    min-height: auto;
+    width: 187px;
+  }
+
+  .jobs__details::before {
+    top: 10px;
+    left: 10px;
+    margin-right: 30px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .jobs__item--catering .jobs__details::before {
+    background-size: 38px 44px;
+  }
+  
+  .jobs__item--cleaning .jobs__details::before {
+    background-position: 8px 12px;
+    background-size: 64px 50px;
+  }
+  
+  .jobs__item--vending .jobs__details::before {
+    background-position: 12px 20px;
+    background-size: 56px 48px;
+  }
+  
+  .jobs__item--kitchen .jobs__details::before {
+    background-size: 57px 44px;
+  }
+
+  .jobs__employment {
+    margin-bottom: 0;
+  }
+
+  .about__link {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .content-wrapper {
+    flex-direction: row;
+    padding: 96px 254px;
+    padding-left: 257px;
+    width: 1920px;
+  }
+
+  .about {
+    margin: 0;
+    margin-right: 149px;
+    padding: 0;
+    width: 570px;
+  }
+
+  .jobs {
+    margin: 0;
+    padding: 0;
+    width: 690px;
+  }
+  
+  .jobs__main-info {
+    width: 330px;
+    margin-right: 29px;
+  }
+  
+}
