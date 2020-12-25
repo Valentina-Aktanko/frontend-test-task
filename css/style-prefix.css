@@ -228,6 +228,10 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;  /* for IE  */
 }
 
+.jobs__main-info {
+  width: 100%;
+}
+
 .jobs__title {
   margin-bottom: 7px;
 }
