@@ -201,6 +201,11 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;  /* for IE  */
 }
 
+.jobs__item:hover,
+.jobs__item:active {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 .jobs__main-info {
   width: 100%;
 }
@@ -274,27 +279,12 @@ input[type="radio"].visually-hidden {
   height: 36px;
 }
 
-.jobs__details::before {
-}
-
 .jobs__text {
   margin-bottom: 10px;
 }
 
 .jobs__text:last-of-type {
   margin-bottom: 0;
-}
-
-.jobs__item--catering .jobs__details::before {
-}
-
-.jobs__item--cleaning .jobs__details::before {
-}
-
-.jobs__item--vending .jobs__details::before {
-}
-
-.jobs__item--kitchen .jobs__details::before {
 }
 
 .jobs__button {
@@ -413,5 +403,4 @@ input[type="radio"].visually-hidden {
     width: 330px;
     margin-right: 29px;
   }
-  
 }
