@@ -1,0 +1,38 @@
+:root {
+  --color-white: #ffffff;
+  --color-blue: #0094d3;
+  --color-extra-dark-grey: #2a2c2b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 375px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  color: var(--color-extra-dark-grey);
+  color: #2a2c2b;
+  background-color: var(--color-white);
+  background-color: #ffffff;
+}
+
+.page-header {
+  padding: 27px 23px;
+}
+
+.logo {
+  display: block;
+  width: 185px;
+  height: 43px;
+}
+
+.main-nav {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 1960px)
+}
