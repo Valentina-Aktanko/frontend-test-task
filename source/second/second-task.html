@@ -4,55 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>P-Company</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style1.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header class="page-header">
-    <a class="logo">
-      <img src="img/logo.jpg" width="185" height="43" alt="Логотип компании P-Company">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Lorem ipsum dolor</a>
-            <ul class="site-list__submenu">
-              <li class="site-list__submenu-item">
-                <a href="#">Building cleaning</a>
-              </li>
-              <li class="site-list__submenu-item">
-                <a href="#">Company catering</a>
-              </li>
-              <li class="site-list__submenu-item">
-                <a href="#">Personnel services</a>
-              </li>
-              <li class="site-list__submenu-item">
-                <a href="#">Catering services</a>
-              </li>
-            </ul>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Sollicitudin</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Aliquam</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Kontakt</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <span class="visually-hidden">Фейсбук</span>
+<body class="body">
+  <div class="page-wrapper">
+    <header class="page-header">
+      <nav class="navigation navigation--opened navigation--closed">
+        <a class="navigation__logo">
+          <img src="img/logo.jpg" width="185" height="43" alt="Логотип компании P-Company">
         </a>
-      </li>
-    </ul>
-  </header>
-  
+        <ul class="navigation__list site-list">
+          <li class="site-list__item"><a href="#" class="site-list__link site-list__link--active">Lorem ipsum dolor</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Sollicitudin</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Aliquam</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Kontakt</a></li>
+        </ul>
+        <button class="navigation__toggle navigation__toggle--off" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
