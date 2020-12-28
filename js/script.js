@@ -16,17 +16,11 @@ navToggle.addEventListener('click', function() {
 });
 
 // Подменю
-let navLinks = document.querySelectorAll('.site-list__link');
+let mainMenu = document.querySelector('.site-list');
 
-for (let i = 0; i < navLinks.length; i++) {
-  let navLink = navLinks[i];
-  let navItem = navLink.parentNode;
-  let subMenu = navItem.querySelector('.submenu-list');
-
-  if(subMenu !== null) {
-    navLink.addEventListener('click', function() {
+mainMenu.addEventListener('click', function(e){
+  let navLink = e.target.closest('a');
+  if (navLink) {
       navLink.classList.toggle('site-list__link--active');
-    })
   }
-
-}
+});
